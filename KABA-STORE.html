@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KABA-STORE.com</title>
+        <meta charset="utf 8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="KABA-STORE.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+                <h1 style="font-family:'Courier New'">- KABA-STORE -</h1>
+                <h1 style="font-family:'Brush Script MT'">Top-up Aman, Murah, dan Terpercaya</h1>
+        </div>
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="Order.html">Order</a>
+            <a href="http://localhost/daskom/Ujian Daskom/index.php">Buku Tamu</a>
+            <a href="About.html">About Us</a>
+        </div>
+        <!-- Content -->
+        <div class="logo">
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><img src="LOGO.JPG" style="float:left;" />
+            Selamat datang di KABA-STORE. Tempat Top-Up Game termurah dan teraman. Kami akan melayani anda dengan ramah.</p><br>
+            <p style="font-family: Lucida Console;">OPEN : 9:00 - 21:00 WIB </p>
+            <p style="font-family: Lucida Console;">Sunday : CLOSED</p>
+            <p style="color: red; font-family: Fantasy;">(Peringatan! Kesalahan memesan tidak menjadi tanggung jawab kami!)
+            </p>
+        </div>
+        <div>
+            <p>
+                <img src="ml.png" alt="Mobile Legend" class="game" align="left">
+                <img src="genshin.jpg" alt="Genshin Impact" class="game" align="left">
+                <img src="ff.jpg" alt="Free Fire" class="game" align="left">
+                <img src="pubg.jpg" alt="PUBG Mobile" class="game" align="left">
+            </p>
+            </div>
+        <!-- End Content -->
+        <!-- Footer -->
+        <div>
+            <p align="center" style="font-family:'Courier New'">Copyright &copy2021 KABA-STORE</p><hr>
+            <p align ="center" id="tanggal"></p>
+            <div class="jam_digital" id="jam_digital">
+                <div class="kotak">
+                    <p id="jam"></p>
+                </div>
+                <div class="kotak">
+                    <p id="menit"></p>
+                </div>
+                <div class="kotak">
+                    <p id="detik"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+        var tgl = new Date();
+            document.getElementById("tanggal").innerHTML = "Waktu akses "+tgl;
+
+            window.setTimeout("waktu()", 1000);
+            function waktu(){
+                var waktu = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = waktu.getHours();
+                document.getElementById("menit").innerHTML = waktu.getMinutes();
+                document.getElementById("detik").innerHTML = waktu.getSeconds();
+            }
+        </script>
+        <!-- End Footer -->
+    </body>
+</html>

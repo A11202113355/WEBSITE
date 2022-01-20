@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    color: white;
+    background-color: #1d1b94;
+    padding:20px;
+    text-align: center;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+    font-family:'Courier New';
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px 30px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color:#8e94eb;
+    color: rgb(7, 7, 7);
+}
+.logo{
+    padding: 20px;
+    font-size: 1em;
+}
+.game{
+    width: 160px;
+    height: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.content{
+    border: 10px solid transparent;
+    padding: 15px;
+}
+/* jAM */
+.jam_digital{
+    overflow: hidden;
+    width: 280px;
+    margin: 20px auto;
+    border: 5px ridge rgb(255, 255, 255);
+    background-color: rgb(9, 122, 252);
+}
+.kotak{
+    float: left;
+    width: 90px;
+    height: 80px;
+}
+.jam_digital p{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Bold, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 28px;
+}
